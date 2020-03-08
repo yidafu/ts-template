@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint --ext .ts --fix src/",
-    "test": "jest"
+    "test": "jest",
+    "prepublishOnly": "rm -fr dsit && yarn build",
+    "build": "tsc --build tsconfig.json"
   },
   "repository": {
     "type": "git",
